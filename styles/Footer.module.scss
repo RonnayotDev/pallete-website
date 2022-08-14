@@ -1,0 +1,41 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+.footer{
+    padding: 2rem;
+    background-color: #084594;
+    color:white;
+}
+.gridfooter{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.wrapcontact{
+    display: flex;
+}
+.contact{
+    margin-right: 6rem;
+    margin-top: 1rem;
+}
+.contact i{
+    margin-right: 1rem;
+    color: white;
+}
+.contentright{
+    display: flex;
+    justify-content: flex-end;
+}
+.bottom{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:768px){
+    .gridfooter{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .wrapcontact{
+        flex-direction: column;
+    }
+    .contentright{
+        justify-content: center;
+    }
+}
