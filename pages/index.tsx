@@ -20,23 +20,23 @@ import Imagecontent51 from "../public/img/item1.jpg";
 import Imagecontent52 from "../public/img/item2.jpg";
 import Imagecontent53 from "../public/img/item3.jpg";
 
-const dataContent2 = [
-  {
-    imageIcon: "../public/img/Icon-1.png",
-    title: "ถูกสุขลักษณะ และ ทนทาน",
-    desc: "พาเลทพลาสติกของเราทั้งหมดสามารถนำกลับมารีไซเคิลได้และเป็นมิตรต่อสิ่งแวดล้อม",
-  },
-  {
-    imageIcon: "../public/img/Icon-2.png",
-    title: "สินค้าที่มีคุณภาพเหมาะสมกับราคา",
-    desc: "คำนึงถึงความคุ้มค่าในการใช้งานผลิตภัณฑ์เราจึงคัดสรรค์สินค้าที่คุณภาพสูงในราคาเหมาะสม",
-  },
-  {
-    imageIcon: "../public/img/Icon-3.png",
-    title: "การบริการจัดส่ง",
-    desc: "มีการบริการจัดส่งฟรี (เงื่อนไขเป็นไปตามข้อกำหนดของบริษัทฯ)",
-  },
-];
+// const dataContent2 = [
+//   {
+//     imageIcon: "../public/img/Icon-1.png",
+//     title: "ถูกสุขลักษณะ และ ทนทาน",
+//     desc: "พาเลทพลาสติกของเราทั้งหมดสามารถนำกลับมารีไซเคิลได้และเป็นมิตรต่อสิ่งแวดล้อม",
+//   },
+//   {
+//     imageIcon: "../public/img/Icon-2.png",
+//     title: "สินค้าที่มีคุณภาพเหมาะสมกับราคา",
+//     desc: "คำนึงถึงความคุ้มค่าในการใช้งานผลิตภัณฑ์เราจึงคัดสรรค์สินค้าที่คุณภาพสูงในราคาเหมาะสม",
+//   },
+//   {
+//     imageIcon: "../public/img/Icon-3.png",
+//     title: "การบริการจัดส่ง",
+//     desc: "มีการบริการจัดส่งฟรี (เงื่อนไขเป็นไปตามข้อกำหนดของบริษัทฯ)",
+//   },
+// ];
 
 const Home: NextPage = () => {
   return (
@@ -60,6 +60,7 @@ const Home: NextPage = () => {
             alt="wallpaper-1"
             width={500}
             height={400}
+            
           />
         </div>
         <div className={styles.content1right}>

@@ -24,7 +24,7 @@
 .content1left{
     padding: 4rem;
 }
-.content1left img{
+.content1left > div{
     box-shadow: 10px 10px 0px #084594;
 }
 .content1right{
@@ -181,6 +181,9 @@
 }
 .imagecontent5{
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width:768px){
