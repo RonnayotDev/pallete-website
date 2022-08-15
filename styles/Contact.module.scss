@@ -1,0 +1,42 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+.container{
+    padding: 2rem;
+}
+.titlecontact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem
+}
+.titlecontact p::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 50px;
+    background: #084594;
+    margin: 15px auto 0 auto;
+}
+.wrapcontact{
+    padding: 4rem;
+}
+.desccontact i{
+    padding-right: 1rem;
+}
+.desccontact p{
+    font-size: 22px;
+}
+.mapcontact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:768px){
+    .wrapcontact{
+        padding: 0
+    }
+    .desccontact p{
+        font-size: 16px;
+        padding: 0.5rem;
+        line-height: 1.5;
+    }
+}
