@@ -19,19 +19,26 @@ const Navbar = () => {
             <Image
               src={Logo}
               alt="Logo"
-              width="129.5px"
-              height="120.5px"
+              width="90px"
+              height="80px"
+              objectFit="contain"
             />
           </Link>
           <div className={styles.wrappertop}>
             <div className={styles.texttop}>
-              <p><strong>จ.เจริญทรัพย์ รีไซเคิล จำกัด</strong></p>
-              <p>30 / 1 ม.6 ต.หมอนนาง อ.พนัสนิคม จ.ชลบุรี 20140</p>
-              <p>เลขทะเบียนนิติบุคคล 020-3562-0023-33</p>
+              <p className={styles.headerText1}>จ.เจริญทรัพย์ รีไซเคิล จำกัด</p>
+              <p className={styles.headerText}>30 / 1 ม.6 ต.หมอนนาง อ.พนัสนิคม จ.ชลบุรี 20140</p>
+              <p className={styles.headerText}>เลขทะเบียนนิติบุคคล 020-3562-0023-33</p>
             </div>
             <div className={styles.contacttop}>
-            <p><i className="bi bi-envelope-fill" ></i>: charoensup.recycle@hotmail.com</p>
-            <p><i className="bi bi-telephone-fill"></i>: 095-979-4544 , 081-4674084 , 096-896-5251</p>
+              <div className={styles.contactwrapper}>
+                <i className="bi bi-envelope-fill" ></i>
+                <p className={styles.headerText}>: charoensup.recycle@hotmail.com</p>
+              </div>
+              <div className={styles.contactwrapper}>
+                <i className={`bi bi-telephone-fill`}></i>
+                <p className={styles.headerText}>: 095-979-4544 , 081-4674084 , 096-896-5251</p>
+              </div>
             </div>
           </div>
         </div>

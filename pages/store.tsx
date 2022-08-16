@@ -16,316 +16,214 @@ import ImageStore10 from "../public/img/pallete-blackhole-1.jpg";
 import ImageStore11 from "../public/img/pallete9.png.jpg";
 
 const Store: NextPage = () => {
+
+  const data = [
+    {
+      title: "พาเลทสีฟ้า",
+      mainImg: ImageStore1,
+      tableData: [
+        {
+          feature: "ขนาด",
+          detail: "110x110x15cm",
+        },
+        {
+          feature: "วัสดุ",
+          detail: "HDPE",
+        },
+        {
+          feature: "รับน้ำหนักเคลื่อนย้าย",
+          detail: "1000 กก.",
+        },
+        {
+          feature: "รับน้ำหนักอยู่กับที่",
+          detail: "1500 กก.",
+        },
+        {
+          feature: "การใช้งาน",
+          detail: "น้ำหนักเบา , รับน้ำหนักได้ดี",
+        },
+      ],
+      imgs: [
+        ImageStore5,
+        ImageStore6
+      ]
+    },
+    {
+      title: "พาเลทสีดำ",
+      mainImg: ImageStore2,
+      tableData: [
+        {
+          feature: "ขนาด",
+          detail: "110x110x12cm",
+        },
+        {
+          feature: "วัสดุ",
+          detail: "PP",
+        },
+        {
+          feature: "รับน้ำหนักเคลื่อนย้าย",
+          detail: "1000 กก.",
+        },
+        {
+          feature: "รับน้ำหนักอยู่กับที่",
+          detail: "1200 กก.",
+        },
+        {
+          feature: "การใช้งาน",
+          detail: "น้ำหนักเบา , รับน้ำหนักได้ดี",
+        },
+      ],
+      imgs: [
+        ImageStore7,
+        ImageStore8
+      ]
+    },
+    {
+      title: "หลุมดำ",
+      mainImg: ImageStore3,
+      tableData: [
+        {
+          feature: "ขนาด",
+          detail: "105x105x14cm",
+        },
+        {
+          feature: "วัสดุ",
+          detail: "PP",
+        },
+        {
+          feature: "รับน้ำหนักเคลื่อนย้าย",
+          detail: "700 กก.",
+        },
+        {
+          feature: "รับน้ำหนักอยู่กับที่",
+          detail: "1200 กก.",
+        },
+        {
+          feature: "การใช้งาน",
+          detail: "น้ำหนักเบา , รับน้ำหนักได้ดี",
+        },
+      ],
+      imgs: [
+        ImageStore9,
+        ImageStore10
+      ]
+    },
+    {
+      title: "พาเลทสีเหลือง",
+      mainImg: ImageStore4,
+      tableData: [
+        {
+          feature: "ขนาด",
+          detail: "110x110x16cm",
+        },
+        {
+          feature: "วัสดุ",
+          detail: "HDPE",
+        },
+        {
+          feature: "รับน้ำหนักเคลื่อนย้าย",
+          detail: "1000 กก.",
+        },
+        {
+          feature: "รับน้ำหนักอยู่กับที่",
+          detail: "1500 กก.",
+        },
+        {
+          feature: "การใช้งาน",
+          detail: "น้ำหนักเบา , รับน้ำหนักได้ดี",
+        },
+      ],
+      imgs: [
+        '/img/vdo-pallete-yellow.mp4',
+        ImageStore11
+      ]
+    }
+  ]
+
   return (
     <>
       <Head>
-          <title>Store - JRS Thailand Co.,Ltd.</title>
+        <title>Store - JRS Thailand Co.,Ltd.</title>
       </Head>
       <div className={styles.container}>
         <div className={styles.titlestore}>
           <h2>สินค้า - ขาย/ให้เช่า</h2>
-          <p>
+          <p className={styles.desstore}>
             ขาย และ เช่า พาเลทพลาสติกมือสอง ที่มีคุณภาพทนทานรับนน.สินค้าได้ดี
-            <br />
             ทางเราแนะนำได้ตรงจุดในการใช้งาน และท่านสามารถขายคืนให้กับทางเราได้
             เมื่อชิ้นงานของท่านใช้จนคุ้มค่าแตกหักไปแล้ว
           </p>
         </div>
         <div className={styles.containertore}>
-          <div className={styles.borderstore}>
-            <h2>พาเลทสีฟ้า</h2>
-            <div className={styles.wrapstore}>
-              <div className={styles.imagestore}>
-                <Image
-                  src={ImageStore1}
-                  alt="image-store-1"
-                  width={210}
-                  height={160}
-                />
-              </div>
-              <div className={styles.tablestore}>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Featured</th>
-                      <th>Detail</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>ขนาด</td>
-                      <td>110x110x15cm</td>
-                    </tr>
-                    <tr>
-                      <td>วัสดุ</td>
-                      <td>HDPE</td>
-                    </tr>
-                    <tr>
-                      <td>รับน้ำหนักเคลื่อนย้าย</td>
-                      <td>1000 กก.</td>
-                    </tr>
-                    <tr>
-                      <td>รับน้ำหนักอยู่กับที่</td>
-                      <td>1500 กก.</td>
-                    </tr>
-                    <tr>
-                      <td>การใช้งาน</td>
-                      <td>น้ำหนักเบา , รับน้ำหนักได้ดี</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <button>
-                  <Link href="/contact">สอบถามราคา</Link>
-                </button>
-              </div>
-            </div>
-            <div className={styles.howtostore}>
-              <div className={styles.titlehowtostore}>
-                <h2>รูปภาพ/วีดีโอ การใช้งาน</h2>
-                <p></p>
-              </div>
-              <div className={styles.wraphowtostore}>
-                <div className={styles.imagehowtostore}>
-                  <Image
-                    src={ImageStore5}
-                    alt="image-store-5"
-                    width={380}
-                    height={380}
-                  />
+          {data.map((item, index) => (
+            <div className={styles.borderstore} key={index}>
+            <h2 className={styles['borderstoretitle']}>{item.title}</h2>
+              <div className={styles.innerborderstore} key={index}>
+
+
+                <div className={styles.wrapstore}>
+
+                  <div className={styles.imagestore}>
+                    <div className={styles.imagestorewrapper}>
+                      <Image
+                        src={item.mainImg}
+                        alt="image-store-1"
+                        width={210}
+                        height={160}
+                        objectFit="contain"
+                      />
+                    </div>
+                  </div>
+
+                  <div className={styles.tablestore}>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Featured</th>
+                          <th>Detail</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {item.tableData.map(tableData => (
+                          <tr>
+                            <td>{tableData.feature}</td>
+                            <td>{tableData.detail}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                    <button>
+                      <Link href="/contact">สอบถามราคา</Link>
+                    </button>
+                  </div>
+
                 </div>
-                <div className={styles.imageshowtostore}>
-                  <Image
-                    src={ImageStore6}
-                    alt="image-store-6"
-                    width={380}
-                    height={380}
-                  />
+                <div className={styles.howtostore}>
+                  <div className={styles.titlehowtostore}>
+                    <h2 className='borderstoresubtitle'>รูปภาพ/วีดีโอ การใช้งาน</h2>
+                    <p></p>
+                  </div>
+                  <div className={styles.wraphowtostore}>
+                    {item.imgs.map(img => (
+                      <div className={styles.imagehowtostore}>
+                        {typeof img === 'string' ? (
+                          <video className={styles.video} controls src={img} />
+                        ) : (
+                          <Image
+                            src={img}
+                            alt="image-store-5"
+                            width={380}
+                            height={380}
+                          />
+                        )}
+                      </div>
+                    ))}
+
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className={styles.borderstore}>
-            <h2>พาเลทสีดำ</h2>
-            <div className={styles.wrapstore}>
-              <div className={styles.imagestore}>
-                <Image
-                  src={ImageStore2}
-                  alt="image-store-2"
-                  width={210}
-                  height={160}
-                />
-              </div>
-              <div className={styles.tablestore}>
-                <table>
-                <thead>
-                    <tr>
-                        <th>Featured</th>
-                        <th>Detail</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>ขนาด</td>
-                        <td>110x110x12cm</td>
-                    </tr>
-                    <tr>
-                        <td>วัสดุ</td>
-                        <td>PP</td>
-                    </tr>
-                    <tr>
-                        <td>รับน้ำหนักเคลื่อนย้าย</td>
-                        <td>00 กก.</td>
-                    </tr>
-                    <tr>
-                        <td>รับน้ำหนักอยู่กับที่</td>
-                        <td>
-                            1200 กก.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>การใช้งาน</td>
-                        <td>น้ำหนักเบา , รับน้ำหนักได้ดี</td>
-                    </tr>
-                </tbody>
-                </table>
-                <button>
-                  <Link href="/contact">สอบถามราคา</Link>
-                </button>
-              </div>
-            </div>
-            <div className={styles.howtostore}>
-              <div className={styles.titlehowtostore}>
-                <h2>รูปภาพ/วีดีโอ การใช้งาน</h2>
-                <p></p>
-              </div>
-              <div className={styles.wraphowtostore}>
-                <div className={styles.imagehowtostore}>
-                  <Image
-                    src={ImageStore7}
-                    alt="image-store-7"
-                    width={380}
-                    height={380}
-                  />
-                </div>
-                <div className={styles.imageshowtostore}>
-                  <Image
-                    src={ImageStore8}
-                    alt="image-store-8"
-                    width={380}
-                    height={380}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={styles.borderstore}>
-            <h2>หลุมดำ</h2>
-            <div className={styles.wrapstore}>
-              <div className={styles.imagestore}>
-                <Image
-                  src={ImageStore3}
-                  alt="image-store-3"
-                  width={210}
-                  height={160}
-                />
-              </div>
-              <div className={styles.tablestore}>
-                <table>
-                <thead>
-                <tr>
-                    <th>Featured</th>
-                    <th>Detail</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>ขนาด</td>
-                    <td>105x105x14cm</td>
-                </tr>
-                <tr>
-                    <td>วัสดุ</td>
-                    <td>PP</td>
-                </tr>
-                <tr>
-                    <td>รับน้ำหนักเคลื่อนย้าย</td>
-                    <td>700 กก.</td>
-                </tr>
-                <tr>
-                    <td>รับน้ำหนักอยู่กับที่</td>
-                    <td>
-                        1200 กก.
-                    </td>
-                </tr>
-                <tr>
-                    <td>การใช้งาน</td>
-                    <td>น้ำหนักเบา , รับน้ำหนักได้ดี</td>
-                </tr>
-            </tbody>
-                </table>
-                <button>
-                  <Link href="/contact">สอบถามราคา</Link>
-                </button>
-              </div>
-            </div>
-            <div className={styles.howtostore}>
-              <div className={styles.titlehowtostore}>
-                <h2>รูปภาพ/วีดีโอ การใช้งาน</h2>
-                <p></p>
-              </div>
-              <div className={styles.wraphowtostore}>
-                <div className={styles.imagehowtostore}>
-                  <Image
-                    src={ImageStore9}
-                    alt="image-store-9"
-                    width={380}
-                    height={380}
-                  />
-                </div>
-                <div className={styles.imageshowtostore}>
-                  <Image
-                    src={ImageStore10}
-                    alt="image-store-10"
-                    width={380}
-                    height={380}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={styles.borderstore}>
-            <h2>พาเลทสีเหลือง</h2>
-            <div className={styles.wrapstore}>
-              <div className={styles.imagestore}>
-                <Image
-                  src={ImageStore4}
-                  alt="image-store-4"
-                  width={210}
-                  height={160}
-                />
-              </div>
-              <div className={styles.tablestore}>
-                <table>
-                <thead>
-            <tr>
-                <th>Featured</th>
-                <th>Detail</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>ขนาด</td>
-                <td>110x110x16cm</td>
-            </tr>
-            <tr>
-                <td>วัสดุ</td>
-                <td>HDPE</td>
-            </tr>
-            <tr>
-                <td>รับน้ำหนักเคลื่อนย้าย</td>
-                <td>1000 กก.</td>
-            </tr>
-            <tr>
-                <td>รับน้ำหนักอยู่กับที่</td>
-                <td>
-                   1500 กก.
-                </td>
-            </tr>
-            <tr>
-                <td>การใช้งาน</td>
-                <td>น้ำหนักเบา , รับน้ำหนักได้ดี</td>
-            </tr>
-        </tbody>
-                </table>
-                <button>
-                  <Link href="/contact">สอบถามราคา</Link>
-                </button>
-              </div>
-            </div>
-            <div className={styles.howtostore}>
-              <div className={styles.titlehowtostore}>
-                <h2>รูปภาพ/วีดีโอ การใช้งาน</h2>
-                <p></p>
-              </div>
-              <div className={styles.wraphowtostore}>
-                <div className={styles.imagehowtostore}>
-                  <Image
-                    src={ImageStore11}
-                    alt="image-store-11"
-                    width={380}
-                    height={380}
-                  />
-                </div>
-                <div className={styles.imageshowtostore}>
-                  <Image
-                    src={ImageStore11}
-                    alt="image-store-11"
-                    width={380}
-                    height={380}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </>

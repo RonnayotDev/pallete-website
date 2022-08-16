@@ -22,22 +22,14 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
+
+
 * {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
-@media screen and (max-width:768px){
+@media screen and (max-width:1024px){
   .br728{
       display: block;
   }
 }
-

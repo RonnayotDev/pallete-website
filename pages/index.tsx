@@ -54,14 +54,15 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div className={styles.content1}>
-        <div className={styles.content1left}>
-          <Image
-            src={Imagecontent1}
-            alt="wallpaper-1"
-            width={500}
-            height={400}
-            
-          />
+        <div className={styles.content1left1}>
+          <div className={styles.content1left}>
+            <Image
+              src={Imagecontent1}
+              alt="wallpaper-1"
+              width={500}
+              height={400}
+            />
+          </div>
         </div>
         <div className={styles.content1right}>
           <h2>จ.เจริญทรัพย์ รีไซเคิล (JRS) จำกัด</h2>

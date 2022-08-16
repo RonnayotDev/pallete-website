@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .captionbanner h2{
     color: white;
     text-shadow: 2px 2px 5px black;
@@ -22,7 +23,11 @@
     grid-template-columns: repeat(2, 1fr);
 }
 .content1left{
-    padding: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    box-shadow: 10px 10px 0px #084594;
+    margin: 4rem;
 }
 .content1left > div{
     box-shadow: 10px 10px 0px #084594;
@@ -40,6 +45,11 @@
     color: white;
     padding: 1rem;
     background-color: #084594;
+}
+.content1left1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .content2{
     padding: 2rem;
@@ -179,6 +189,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
 .imagecontent5{
     margin-top: 1rem;
     display: flex;
@@ -186,12 +197,17 @@
     align-items: center;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1024px){
     .captionbanner h2{
         font-size: 28px;
     }
     .content1{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .content1left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .content2content{
         grid-template-columns: repeat(1, 1fr);

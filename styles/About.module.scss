@@ -26,7 +26,7 @@
 .descabout p{
     line-height: 1.5;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:1024px){
     .wrapabout{
         grid-template-columns: repeat(1,1fr);
     }
